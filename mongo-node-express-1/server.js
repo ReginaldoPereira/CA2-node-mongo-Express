@@ -1,12 +1,22 @@
 const express = require('express')
 const bodyParser= require('body-parser') 
 const app = express()  
+mongoose = require('mongoose');
 
 app.use(bodyParser.urlencoded({extended: true}))
-
 app.listen(3000, function() {
-   console.log('listening on 3000')
-  })
+    console.log('port 3000')
+
+})
+
+mongoose.connect("mongodb+srv://test:ccttestuser@cluster0-ky6dr.mongodb.net/test?retryWrites=true&w=majority");
+mongoose.connection.on('error', (err) => { 
+    console.log('Mongodb Error: ', err); 
+    process.exit();
+});
+mongoose.connection.on('connected', () => { 
+    console.log('MongoDB is successfully connected');
+});
 
 
   app.get('/', (req, res) => {
@@ -18,16 +28,10 @@ app.listen(3000, function() {
         console.log('saved to database')
         res.redirect('/')
       })
-    })
-
+   
+ })
   
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://test:<password>@cluster0-ky6dr.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
+
 
 
