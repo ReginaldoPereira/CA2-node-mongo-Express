@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ReginaldoPereira/mongo-node-express-1/issues"
   },
-  "homepage": "https://github.com/ReginaldoPereira/mongo-node-express-1#readme"
+  "homepage": "https://github.com/ReginaldoPereira/mongo-node-express-1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
