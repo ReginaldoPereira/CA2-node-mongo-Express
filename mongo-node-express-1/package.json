@@ -1,0 +1,26 @@
+{
+  "name": "mongo-node-express-1",
+  "version": "1.0.0",
+  "description": "CA2- lastone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReginaldoPereira/mongo-node-express-1.git"
+  },
+  "keywords": [
+    "Express",
+    "REstAPI",
+    "MongoDB",
+    "mongoose",
+    "CA2"
+  ],
+  "author": "Reginaldo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReginaldoPereira/mongo-node-express-1/issues"
+  },
+  "homepage": "https://github.com/ReginaldoPereira/mongo-node-express-1#readme"
+}
