@@ -1,0 +1,31 @@
+{
+  "name": "easy-notes-app",
+  "version": "1.0.0",
+  "description": "WEB CA2\\",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReginaldoPereira/CA2-node-mongo-Express.git"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "mogoose",
+    "Notes"
+  ],
+  "author": "Reginaldo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReginaldoPereira/CA2-node-mongo-Express/issues"
+  },
+  "homepage": "https://github.com/ReginaldoPereira/CA2-node-mongo-Express#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  }
+}
